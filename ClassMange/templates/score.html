@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}学生信息管理系统{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>学生姓名</td>
+                            <td>语文成绩</td>
+                            <td>数学成绩</td>
+                            <td>英语成绩</td>
+                            <td>修改/删除</td>
+                        </tr>
+                        {% for score in scores %}
+                        <tr>
+                            <td>{{ score.student_name }}</td>
+                            <td>{{ score.chinese_score }}</td>
+                            <td>{{ score.math_score }}</td>
+                            <td>{{ score.english_score }}</td>
+                            <td><a href="">修改</a>
+                                <a href="">删除</a></td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                    <a href="" class="pull-right">添加成绩</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+ * {
+    -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+     border-radius: 0 !important;
+ }
+body{
+    margin: 0;
+}
+
+.navtype{
+    background-color: #0f0f0f;
+    padding: 46px;
+    color: white;
+}
+a:link{
+    text-decoration: none !important;
+}
+.bloglist{
+    margin-top: 40px;
+}
+
+.panel-default:a{
+    margin: auto;
+}
+
+.navbar-default{
+    border: 0;
+}
+
+.django-ckeditor-widget{
+    width: 100%;
+}
+
+.reply{
+    margin-left: 64px;
+}
+
+
+.comment{
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}

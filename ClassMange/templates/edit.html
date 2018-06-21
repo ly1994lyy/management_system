@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}学生信息管理系统{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form action="{% url 'edit_stu' student.pk %}" method="post">
+                        {% csrf_token %}
+                        <label for="">姓名：</label><input type="text" name='name' value="{{ student.name }}">
+                        <label for="">年龄：</label><input type="text" name='age' value="{{ student.age }}">
+                        <input type="submit" value="修改">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
