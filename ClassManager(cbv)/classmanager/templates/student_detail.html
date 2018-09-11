@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+    <ul>
+        <li>{{ student.name }}</li>
+        <li>{{ student.age }}</li>
+        <li>{{ student.get_sex_display }}</li>
+        <li>{{ student.get_classes_display }}</li>
+    </ul>
+{% endblock %}

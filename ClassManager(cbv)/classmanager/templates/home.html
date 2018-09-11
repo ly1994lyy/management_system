@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'bootstrap-3.3.7/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-3.3.7/css/base.css' %}">
+    <title>首页</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="row">
+                <a href="{% url 'home' %}" class="navbar-brand"><b>育才中学教务系统</b></a>
+                <ul class="nav navbar-nav">
+                    <li role="presentation" class="active"><a href="{% url 'home' %}">首页</a></li>
+                    <li role="presentation"><a href="{% url 'student_list' %}">学生管理</a></li>
+                    <li role="presentation"><a href="#">成绩管理</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
